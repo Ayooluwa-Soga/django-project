@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block title %}
+  Contact
+{% endblock %}
+
+{% block content %}
+  <h1>This is the Contact page</h1>
+
+  <div class="contact-form">
+    <form action="#" class="p-3 bg-gray-200 container m-2">
+      <div class="input-text flex">
+        <input type="text" placeholder="Full name" class="p-2 m-2 border border-solid border-gray-400 hover:border-gray-500 rounded w-1/2" />
+        <input type="email" placeholder="eMail" class="p-2 m-2 border border-solid border-gray-400 hover:border-gray-500 rounded w-1/2" />
+      </div>
+      <div class="flex">
+        <textarea name="description" id="" cols="30" rows="10" placeholder="Complaints" class="p-2 m-2 border border-solid border-gray-400 hover:border-gray-500 rounded w-full"></textarea>
+        <input type="submit" class="bg-teal-500 py-2 px-6 m-2 rounded-2xl text-white font-semibold" />
+      </div>
+    </form>
+  </div>
+{% endblock %}
