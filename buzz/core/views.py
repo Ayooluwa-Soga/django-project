@@ -12,6 +12,8 @@ def index(request):
         'categories': categories,
         'items': items,
     })
+
+
 def contact(request):
     return render(request, 'core/contact.html')
 
@@ -21,8 +23,7 @@ def signup(request):
         form = SignupForm(request.POST)
         if form.is_valid():
             form.save()
-
-            return redirect('login/')
+            return redirect('/login/')
         
     else:
         form = SignupForm()
