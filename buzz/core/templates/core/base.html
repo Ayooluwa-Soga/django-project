@@ -16,7 +16,7 @@
         <div class="space-x-6">
             <a href="#" class="px-6 py-2 text-lg font-semibold border-solid border-green-300 border-2 rounded-xl hover:text-gray-500">Item #1</a>
             <a href="#" class="px-6 py-2 text-lg font-semibold border-solid border-green-500 border-2 rounded-xl hover:text-teal-400">Item #2</a>
-            <a href="#" class="px-6 py-3 text-lg font-semibold rounded-xl hover:text-gray-500 hover:bg-gray-400 hover:text-white">Browse</a>
+            <a href="{% url 'dashboard:index' %}" class="px-6 py-3 text-lg font-semibold rounded-xl hover:text-gray-500 hover:bg-gray-400 hover:text-white">Browse My Items</a>
 
             {% if request.user.is_authenticated %}
                 {% comment %} <a href="#" class="px-6 py-3 text-lg font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700">Inbox</a> {% endcomment %}
